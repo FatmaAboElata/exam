@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Q</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light container">
+    <div class="text-center py-3 py-lg-5">
+        <h1 class="display-4">Survey Name</h1>
+        <p class="lead">Subtitle for the Survey Name</p>
+    </div><!-- head-title -->
+
+        <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+
+        <li class="nav-item " role="presentation">
+            <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Step 1 <br><small
+                    class="px-5 d-none d-md-inline">Personal Information</small></button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Step 2 <br><small
+                    class="px-5 d-none d-md-inline">Question W/answer</small></button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link btn-lg " id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Step 3 <br><small
+                    class="px-5 d-none d-md-inline">Question W/rating</small></button>
+        </li>
+
+    </ul>
+
+    
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-12">
+
+                    <label for="" class="my-2">Sex :</label><br>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label " for="flexRadioDefault1">Male
+                        <input class="form-check-input ms-4" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Female
+                </div><!-- col1 -->
+
+                <div class="col-md-3 col-sm-12">
+
+                    <label for="" class="my-2">Age :</label><br>
+                    <input type="number" class="form-control">
+                    
+                </div><!-- col2 -->
+                <div class="col-md-6 col-sm-12">
+
+                    <label for="" class="my-2">phone :</label><br>
+                    <input type="text" class="form-control">
+                    
+                </div><!-- col3 -->
+
+                <div class="col-md-6 col-sm-12">
+
+                    <label for="" class="my-2">Name :</label><br>
+                    <input type="text" class="form-control" placeholder="Firstname Lastname">
+                    
+                </div><!-- col4 -->
+
+                <div class="col-md-6 col-sm-12">
+
+                    <label for="" class="my-2">Email :</label><br>
+                    <input type="text" class="form-control" placeholder="username@domain.com">
+                    
+                </div><!-- col5 -->
+
+                <div class="col-md-9 col-sm-12">
+
+                    <label for="" class="my-2">Adress :</label><br>
+                    <input type="text" class="form-control" placeholder="123 Streetname">
+                    
+                </div><!-- col6 -->
+
+                <div class="col-md-3 col-sm-12">
+
+                    <label for="" class="my-2">Apartment or floor:</label><br>
+                    <input type="text" class="form-control" placeholder="B3 , 4thFloor , or Similar">
+                    
+                </div><!-- col 7-->
+
+                <div class="col-md-6 col-sm-12">
+
+                    <label for="" class="my-2">City :</label><br>
+                    <input type="text" class="form-control" placeholder="City">
+                    
+                </div><!-- col 8 -->
+
+                <div class="col-md-2 col-sm-12">
+
+                    <label for="" class="my-2">Zip :</label><br>
+                    <input type="text" class="form-control" placeholder="123">
+                    
+                </div><!-- col 9-->
+
+                <div class="col-md-4 col-sm-12">
+
+                    <label for="" class="my-2">Country :</label><br>
+                    <select name="" id="" class="form-select">
+                        <option value="">-Select Country-</option>
+                        <option value="">Egypt</option>
+                        <option value="">Sudan</option>
+                        <option value="">lubnan</option>
+                    </select>
+                    
+                </div><!-- col 10-->
+
+            </div><!-- row -->
+            <div>
+                <button class="btn btn-outline-secondary d-block ms-auto my-3 " id="go-to-profile-tab-pane"> step 2</button>
+            </div>
+            
+        </div><!-- personal-info -->
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            
+            <div class="row">
+                <h4 class="text-center my-3">Question #1: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <img src="image/project1.jpg" class="w-100 img-fluid" alt=""><br>
+                    <small class="text-muted mx-auto">A caption for the figure image.</small>
+                    
+                </div><!-- img -->
+                <div class="col-md-6 col-sm-12 pb-5">
+
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 1  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 2 </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 3  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 4  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 5  </div>
+                    <div class="pb-2 d-flex"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input type="text" placeholder="Other" class="form-control w-50"><br>
+                    </div>
+                    <small class="text-muted mx-auto">If none of the answers above is appropriate for you please write your own answer in the input field.</small>
+                    
+                </div><!-- radio -->
+                <hr>
+            </div><!-- row 1-->
+
+            <div class="row">
+                <h4 class="text-center my-3">Question #2: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <img src="image/project2.jpg" class="w-100 img-fluid" alt=""><br>
+                    <small class="text-muted mx-auto">A caption for the figure image.</small>
+                    
+                </div><!-- img -->
+                <div class="col-md-6 col-sm-12 pb-5">
+
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 1  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 2 </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 3  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 4  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 5  </div>
+                    <div class="pb-2 d-flex"><input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input type="text" placeholder="Other" class="form-control w-50"><br>
+                    </div>
+                    <small class="text-muted mx-auto">If none of the answers above is appropriate for you please write your own answer in the input field.</small>
+                    
+                </div><!-- radio -->
+                <hr>
+            </div><!-- row 2-->
+
+            <div class="row">
+                <h4 class="text-center my-3">Question #3: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <img src="image/project1.jpg" class="w-100 img-fluid" alt=""><br>
+                    <small class="text-muted mx-auto">A caption for the figure image.</small>
+                    
+                </div><!-- img -->
+                <div class="col-md-6 col-sm-12 pb-5">
+
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 1  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 2 </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 3  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 4  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 5  </div>
+                    <div class="pb-2 d-flex"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input type="text" placeholder="Other" class="form-control w-50"><br>
+                    </div>
+                    <small class="text-muted mx-auto">If none of the answers above is appropriate for you please write your own answer in the input field.</small>
+                    
+                </div><!-- radio -->
+                <hr>
+            </div><!-- row 3-->
+
+            <div class="row">
+                <h4 class="text-center my-3">Question #4: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <img src="image/project4.jpg" class="w-100 img-fluid" alt=""><br>
+                    <small class="text-muted mx-auto">A caption for the figure image.</small>
+                    
+                </div><!-- img -->
+                <div class="col-md-6 col-sm-12 pb-5">
+
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 1  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 2 </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 3  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 4  </div>
+                    <div class="pb-2"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">Answer for radio 5  </div>
+                    <div class="pb-2 d-flex"><input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input type="text" placeholder="Other" class="form-control w-50"><br>
+                    </div>
+                    <small class="text-muted mx-auto">If none of the answers above is appropriate for you please write your own answer in the input field.</small>
+                    
+                </div><!-- checkbox -->
+            </div><!-- row 4-->
+
+            <button class="btn btn-outline-secondary d-block ms-auto my-3 " id="go-to-profile-tab-pane"> step 3</button>
+            
+
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
+            <div class="row pb-5">
+                
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="mt-3 mb-2">Question #5: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper velit, id condimentum dui aliquet non.</small>
+                </div><!-- text -->
+
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">1</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">2</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">3</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">4</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">5</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">n/a</label>
+
+                    <textarea name="" id="" class="form-control mt-3"  rows="3" placeholder="Write acomment here..."></textarea>
+                </div><!-- answer -->
+
+                <hr>
+            </div><!-- row 1-->
+            <div class="row pb-5">
+                
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="mt-3 mb-2">Question #5: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper velit, id condimentum dui aliquet non.</small>
+                </div><!-- text -->
+
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">1</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">2</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">3</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">4</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">5</label>
+                    <input class="form-check-input me-1 mt-3 mb-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label for="" class="my-2 me-5">n/a</label>
+
+                    <textarea name="" id="" class="form-control mt-3"  rows="3" placeholder="Write acomment here..."></textarea>
+                </div><!-- answer -->
+
+                <hr>
+            </div><!-- row 2-->
+            <div class="row pb-5">
+                
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="mt-3 mb-2">Question #5: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper velit, id condimentum dui aliquet non.</small>
+                </div><!-- text -->
+
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-lg">
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary bg-transparent p-2">1</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">2</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">3</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">4</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">5</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">n/a</span></a></li>
+                        </ul>
+                      </nav>
+
+                    <textarea name="" id="" class="form-control mt-3"  rows="3" placeholder="Write acomment here..."></textarea>
+                </div><!-- answer -->
+
+                <hr>
+            </div><!-- row 3-->
+            <div class="row pb-5">
+                
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="mt-3 mb-2">Question #5: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper velit, id condimentum dui aliquet non.</small>
+                </div><!-- text -->
+
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-lg">
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary bg-transparent p-2">1</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">2</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">3</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">4</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">5</span></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><span class="text-secondary p-2">n/a</span></a></li>
+                        </ul>
+                      </nav>
+
+                    <textarea name="" id="" class="form-control mt-3"  rows="3" placeholder="Write acomment here..."></textarea>
+                </div><!-- answer -->
+
+                <hr>
+            </div><!-- row 4-->
+            <div class="row pb-5">
+                
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="mt-3 mb-2">Question #5: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper velit, id condimentum dui aliquet non.</small>
+                </div><!-- text -->
+
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <div class="d-flex">
+                        <p class="me-2">1</p><input type="range" class="form-range" min="0" max="5" id="customRange2"><p class="ms-2">5</p>
+                    </div>
+                    
+                    <textarea name="" id="" class="form-control mt-3"  rows="3" placeholder="Write acomment here..."></textarea>
+                </div><!-- answer -->
+
+                <hr>
+            </div><!-- row 5-->
+            <div class="row pb-5">
+                
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="mt-3 mb-2">Question #5: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper velit, id condimentum dui aliquet non.</small>
+                </div><!-- text -->
+
+                <div class="col-md-6 col-sm-12 pb-5">
+                    <div class="d-flex">
+                        <p class="me-2">1</p><input type="range" class="form-range" min="0" max="5" id="customRange2"><p class="ms-2">5</p>
+                    </div>
+
+                    <textarea name="" id="" class="form-control mt-3"  rows="3" placeholder="Write acomment here..."></textarea>
+                </div><!-- answer -->
+
+            </div><!-- row 6-->
+
+            <button class="btn btn-outline-secondary d-block ms-auto mb-3" type="submit" id="go-to-profile-tab-pane">Submit</button>
+
+        </div>
+        
+    
+</div>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
